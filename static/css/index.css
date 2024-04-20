@@ -1,0 +1,185 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+/* imported fonts */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.poppins {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: linear-gradient(rgb(22, 60, 185), rgb(128, 157, 240));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.dark-mode {
+    background: linear-gradient(rgb(49, 49, 49), rgb(7, 7, 7));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+
+/* header */
+nav {
+    top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: whitesmoke;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    z-index: 999;
+    padding: 10px;
+    backdrop-filter: blur(4px); background-color: rgba(255, 255, 255, 0.3); border-radius: 26px; box-shadow: 35px 35px 68px 0px rgba(99, 164, 164, 0.5), inset -12px -12px 16px 0px rgba(99, 164, 164, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
+    
+}
+
+/* styling nav links */
+.nav-links ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-link {
+    color: navy;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.active-link {
+    color: rgb(22, 60, 185);
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+/* make text decoration of a link none  */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.downloadBtn{
+    padding: 6px 12px;
+    border: none;
+    background-color: navy;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 15px;
+    text-transform: uppercase;
+}
+
+.downloadBtn:hover {
+    background-color: rgb(22, 60, 185);
+}
+
+/* styling the sections */
+.section {
+    margin-top: 10vh;
+    transition: 2s;
+    width: 100%;
+    color: white;
+    padding-top: 8vh;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+
+
+
+.section.show {
+    opacity: 1;
+    transform: translateY(0);
+   
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        top: 8px;
+        width: 95%;
+        z-index: 999;
+        padding: 4px;
+        backdrop-filter: blur(4px); 
+        background-color: rgba(255, 255, 255, 0.3); 
+        border-radius: 26px;
+        box-shadow: 35px 35px 68px 0px rgba(99, 164, 164, 0.5), inset -12px -12px 16px 0px rgba(99, 164, 164, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
+        
+    }
+    .section {
+        height: auto !important;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+    }
+
+    .nav-link {
+        display: none;
+        font-size: 1rem;
+        color: navy;
+    }
+
+    .downloadBtn{
+        display: none;
+        font-size: 1rem;
+    }
+    .nav-links ul.active {
+        display: flex;
+    }
+
+    .bar {
+        width: 48px;
+        height: 6px;
+        margin: 8px;
+        background-color: navy;
+    }
+
+    .open-nav .nav-link{
+        display: flex;
+        transition: 1s;
+    }
+    .open-nav .downloadBtn {
+        display: block;
+    }
+
+}
