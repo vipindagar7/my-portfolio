@@ -11,12 +11,11 @@ This Django Portfolio is a web application designed to showcase your projects, s
 - **Contact Form**: 📧 Integrated contact form allows visitors to get in touch with you directly through the website.
 
 ## Sample Screenshots
-!(/screenshots/screenshot1.png)
-!(screenshots/screenshot2.png)
-!(/screenshots/screenshot3.png)
-!(/screenshots/screenshot4.png)
-!(/screenshots/screenshot5.png)
-
+![Screenshot 1](screenshots/screenshot1.png)
+![Screenshot 2](screenshots/screenshot2.png)
+![Screenshot 3](screenshots/screenshot3.png)
+![Screenshot 4](screenshots/screenshot4.png)
+![Screenshot 5](screenshots/screenshot5.png)
 ## Installation
 1. Clone the repository to your local machine:
 
