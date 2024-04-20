@@ -1,7 +1,7 @@
-# Django Portfolio 🚀
+# Vipin Dagar's Portfolio 🚀
 
 ## Overview
-This Django Portfolio is a web application designed to showcase your projects, skills, and experiences in an organized and visually appealing manner. It allows you to create and manage portfolio items, categorize them, and provide detailed information about each project or skill.
+This Portfolio is a web application designed to showcase your projects, skills, and experiences in an organized and visually appealing manner. It allows you to create and manage portfolio items, categorize them, and provide detailed information about each project or skill.
 
 ## Features
 

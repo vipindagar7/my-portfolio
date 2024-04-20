@@ -38,7 +38,7 @@ updateActiveLink();
 
 
 // dark and light mode
-document.getElementById('content').addEventListener('change', function () {
+document.getElementById('modeToggle').addEventListener('change', function () {
     document.body.classList.toggle('dark-mode');
 });
 
