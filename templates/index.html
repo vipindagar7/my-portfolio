@@ -1,0 +1,251 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block style %}
+
+
+{% endblock style %}
+{% block main %}
+
+<main>
+    <div class="section home" id="home">
+        <div class="intro box">
+            <h2 class="intro-role-text">Hi, My name is</h2>
+            <h1 class="name-heading">Vipin Dagar</h1>
+            <p class="intro-role-text">I am a</p>
+            <p class="role-text">Web Developer</p>
+            <div class="social-links">
+                <a href="http://www.linkedin.com/in/vipindagar07" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="http://www.github.com/vipindagar7" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="http://www.twitter.com/vipindagar07" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="mailto:vipindagar.code@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="pic">
+                <img src="{% static "/images/developer.png" %}" alt="Vipin Dagar">
+            </div>
+        </div>
+    </div>
+    <div class="section about" id="about">
+        <div class="about-content">
+            <div class="heading">
+                <h1>About Me</h1>
+                <hr>
+            </div>
+            <div class="about-me-content">
+                <p>
+                    I am a web developer, specializing in HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, Python,
+                    Django, and MySQL. My journey into web development began as a self-taught enthusiast, driven by
+                    a passion for creating engaging and functional websites. Over time, I have honed my skills
+                    through hands-on projects and online learning resources, gaining practical experience in
+                    front-end and back-end development. My expertise spans from designing responsive layouts with
+                    HTML, CSS, and Bootstrap, to building dynamic web applications with JavaScript, Python, Django,
+                    and MySQL. I am also familiar with version control systems like Git and GitHub, as well as
+                    deployment platforms like Heroku. I am currently seeking opportunities to apply my skills and
+                    contribute to innovative projects in a collaborative environment.
+                </p>
+                <br>
+                <p>
+                    My educational background includes a Bachelor's degree in Computer Applications from GITAM
+                    (deemed to be University) and completion of Higher studies and Intermediate in Commerce Stream
+                    from CBSE Board. While my formal education provided a strong foundation in computer science
+                    principles, my true learning journey began outside the classroom, where I immersed myself in
+                    coding challenges and real-world projects. Through this combination of academic knowledge and
+                    practical experience, I have developed a comprehensive understanding of web development
+                    principles and techniques. I have also cultivated strong problem-solving skills, attention to
+                    detail, and a commitment to continuous learning and improvement.
+                </p>
+                <br>
+                <p>
+                    As a fresher in the industry, I am eager to leverage my skills and knowledge to contribute to
+                    innovative projects and collaborative teams. Despite my limited professional experience, I have
+                    already completed several projects that demonstrate my ability to tackle complex challenges and
+                    deliver high-quality solutions. I am deeply passionate about coding, a quick learner, and always
+                    eager to explore new technologies and improve my skills. I am excited about the opportunity to
+                    continue growing as a web developer and making meaningful contributions to the field.
+                </p>
+                <div class="social-links">
+                    <a href="http://www.linkedin.com/in/vipindagar07" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="http://www.github.com/vipindagar7" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="http://www.twitter.com/vipindagar07" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="mailto:vipindagar.code@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="about-content">
+            <div class="tab-links">
+                <button class="tab-link active-tab-link" target="skills">SKILLS</button>
+                <button class="tab-link" target="education">EDUCATION</button>
+                <!-- <button class="tab-link" target="experience">EXPERIENCE</button> -->
+            </div>
+            <div class="tab-content">
+                <div class="tab active-tab skill-tab" id="skills">
+                    <span class="skill-badge">HTML</span>
+                    <span class="skill-badge">CSS</span>
+                    <span class="skill-badge">JavaScript</span>
+                    <span class="skill-badge">Bootstrap</span>
+                    <span class="skill-badge">Tailwind CSS</span>
+                    <span class="skill-badge">Python</span>
+                    <span class="skill-badge">Django</span>
+                    <span class="skill-badge">MySQL</span>
+                    <span class="skill-badge">Git</span>
+                    <span class="skill-badge">Version Control</span>
+                    <span class="skill-badge">CI/CD</span>
+                    <span class="skill-badge">Figma</span>
+                </div>
+                <div class="tab education-tab" id="education">
+                    <div class="education">
+                        <ul>
+                            <li>
+                                <h2>Bachelor of Computer Applications</h2>
+                                <p>2021 - 2024</p>
+                                <p>Gitam (deemed to be University)</p>
+                            </li>
+                            <br>
+                            <li>
+                                <h2>Intermediate</h2>
+                                <p>2020 - 2021</p>
+                                <p>CBSE Board</p>
+                            </li>
+                            <br>
+                            <li>
+                                <h2>Higher Studies</h2>
+                                <p>2019 - 2020</p>
+                                <p>CBSE Board</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="tab" id="experience">
+                    experience
+                </div>
+            -->
+            </div>
+        </div>
+    </div>
+    <div class="section projects" id="project">
+        <div class="heading">
+            <h1>Project</h1>
+            <hr>
+        </div>
+        <div class="project">
+            <div class="project-thumbnail">
+                <img src="https://github.com/vipindagar7/mock-interview/raw/main/screenshots/screenshot7.jpeg"
+                    alt="">
+            </div>
+            <div class="project-details">
+                <h2>MOCK INTEVIEW WITH AI</h2>
+                <p>This web application is designed to elevate users' interview skills through AI-driven mock
+                    interviews and personalized sessions with human interviewers. With features like customizable
+                    practice modes, feedback collaboration, and interview scheduling, the platform offers a
+                    comprehensive solution for effective interview preparation. Seamlessly accessible on any device,
+                    the platform prioritizes user privacy and security, ensuring a seamless and confidential
+                    experience for all users.</p>
+                <br>
+                <a href="https://github.com/vipindagar7/mock-interview/" class="project-live-link">VIEW CODE</a>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-thumbnail">
+                <img src="https://github.com/vipindagar7/eCommerce/raw/main/screenshots/screenshot9.png" alt="">
+            </div>
+            <div class="project-details">
+                <h2>E-COMMERCE STORE</h2>
+                <p>ShopinglyX is an online platform revolutionizing secondhand fashion discovery. Our platform
+                    offers a meticulously curated selection of pre-loved clothing and accessories, fostering a
+                    conscious and style-driven community. Explore a diverse array of one-of-a-kind fashion items
+                    curated for you, showcasing your unique style preferences and favorite finds. Embrace
+                    eco-consciousness through the magic of secondhand fashion and seamlessly share your discoveries
+                    with friends and followers through social media integration.</p>
+                <br>
+                <a href="https://github.com/vipindagar7/eCommerce/" class="project-live-link">VIEW CODE</a>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-thumbnail">
+                <img src="https://github.com/vipindagar7/crime-report-portal/raw/main/screenshots/screenshot7.jpeg"
+                    alt="">
+            </div>
+            <div class="project-details">
+                <h2>CRIME REPORT PORTAL</h2>
+                <p> The Public Safety Reporting Platform is a comprehensive software solution designed to enhance
+                    community safety and facilitate efficient incident reporting and management. It empowers
+                    citizens to report various incidents, ranging from crimes and emergencies to safety hazards,
+                    through an intuitive user interface. Leveraging advanced technologies such as geolocation
+                    services and multimedia attachments, users can provide detailed information about incidents,
+                    enabling prompt and accurate response from authorities.</p>
+                <br>
+                <a href="https://github.com/vipindagar7/crime-report-portal/" class="project-live-link">VIEW CODE</a>
+            </div>
+        </div>
+       
+        <div class="project">
+            <div class="project-thumbnail">
+                <img src="https://github.com/vipindagar7/mock-interview/raw/main/screenshots/screenshot7.jpeg"
+                    alt="">
+            </div>
+            <div class="project-details">
+                <h2>DEVELOPERS PORTFOLIO</h2>
+                <p>This web application is designed to elevate users' interview skills through AI-driven mock
+                    interviews and personalized sessions with human interviewers. With features like customizable
+                    practice modes, feedback collaboration, and interview scheduling, the platform offers a
+                    comprehensive solution for effective interview preparation. Seamlessly accessible on any device,
+                    the platform prioritizes user privacy and security, ensuring a seamless and confidential
+                    experience for all users.</p>
+                <br>
+                <a href="https://www.github.com/vipindagar7/" class="project-live-link">VIEW CODE</a>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    </div>
+    <div class="section contact" id="contact">
+        <div>
+            <h2>Get In Touch</h2>
+            <hr>
+        </div>
+        <p>Please don't hesitate to reach out by filling out the form below. I'll respond to your message promptly.
+        </p>
+        <div class="contact-form">
+            <form action="">
+                <div class="input-box">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Name" class="input">
+                </div>
+                <div class="input-box">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email" class="input">
+                </div>
+                <div class="input-box">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" placeholder="Message" class="input" cols="30" rows="10"></textarea>
+                </div>
+                <div class="input-box">
+                    <input type="submit" value="Send" class="formBtn">
+                </div>
+            </form>
+        </div>
+        <footer>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/vipindagar07/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://www.github.com/vipindagar7/" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.twitter.com/vipindagar07/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="mailto:vipindagar.code@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>&copy; 2024 Vipin Dagar. All rights reserved.</p>
+
+        </footer>
+    </div>
+
+</main>
+
+{% endblock main %}
+{% block script %}
+
+{% endblock script %}

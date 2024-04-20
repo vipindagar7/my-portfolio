@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="{% static "css/index.css" %} ">
+    <link rel=" stylesheet" href="{% static "css/slider.css" %} ">
+    <link rel=" stylesheet" href="{% static "css/home.css" %} ">
+    <link rel=" stylesheet" href="{% static "css/about.css" %} ">
+    <link rel=" stylesheet" href="{% static "css/project.css" %} ">
+    <link rel=" stylesheet" href="{% static "css/contact.css" %} ">
+    <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    {% block style %}{% endblock style %}
+    <title>Vipin Dagar</title>
+
+<body id="content">
+    <nav>
+        <div class="logo">
+            <h1 style="    color: #008200;
+            ">Vipin Dagar</h1>
+        </div>
+        <div class="nav-links" id="nav-links">
+            <ul>
+                <li><a href="#home" class="nav-link active-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#project" class="nav-link">Project</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="/download" class="downloadBtn"><i class="fas fa-download"></i> Resume</a></li>
+                
+            </ul>
+        </div>
+        <div class="buttons">
+            <!-- toggle dark or light mode btn  -->
+            <label class="toggle">
+                <input type="checkbox" id="modeToggle" class="slider-checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <!-- Hamburger menu -->
+        <div class="hamburger-menu open">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+    {% block main %}{% endblock main %}
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script> -->
+    <script src="{% static "js/index.js" %}"></script>
+    <script src="{% static "js/tab.js" %} "></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+
+    {% block script %}{% endblock script %}
+    <!-- <script src="./js/globle.js"></script> -->
+</body>
+
+</html>
